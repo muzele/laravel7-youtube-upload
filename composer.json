@@ -1,0 +1,47 @@
+{
+    "name": "itgroup/youtube",
+    "description": "Upload video to Youtube Chanel with Laravel 7. Simply update of Dawson/Youtube",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Muzele",
+            "email": "muzele@itgroup-drc.net"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "google/apiclient": "^2.4",
+        "illuminate/support": "^7.4"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.1",
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
+        "psr-4": {
+            "Itgroup\\Youtube\\": "packages/itgroup/youtube/src",
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Itgroup\\Youtube\\": "packages/itgroup/youtube/src",
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Itgroup\\Youtube\\YoutubeServiceProvider"
+            ],
+            "aliases": {
+                "Youtube": "Itgroup\\Youtube\\Facades\\Youtube"
+            }
+        }
+    }
+}
