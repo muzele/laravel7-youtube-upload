@@ -7,7 +7,6 @@ use Google_Client;
 use Google_Service_YouTube;
 use Illuminate\Support\Facades\DB;
 
-
 class Youtube
 {
     /**
@@ -81,7 +80,6 @@ class Youtube
      */
     public function upload($path, array $data = [], $privacyStatus = 'public')
     {
-       
         if(!file_exists($path)) {
             throw new Exception('Video file does not exist at path: "'. $path .'". Provide a full path to the file before attempting to upload.');
         }

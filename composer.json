@@ -10,7 +10,7 @@
     ],
     "require": {
         "php": "^7.0",
-        "google/apiclient": "^2.4",
+        "google/apiclient": "^2.2",
         "illuminate/support": "^7.4"
     },
     "require-dev": {
@@ -18,19 +18,13 @@
         "phpunit/phpunit": "^8.5"
     },
     "autoload": {
-        "classmap": [
-            "database/seeds",
-            "database/factories"
-        ],
         "psr-4": {
-            "Itgroup\\Youtube\\": "packages/itgroup/youtube/src",
-            "App\\": "app/"
+            "Itgroup\\Youtube\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Itgroup\\Youtube\\": "packages/itgroup/youtube/src",
-            "Tests\\": "tests/"
+            "Itgroup\\Youtube\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "stable",
